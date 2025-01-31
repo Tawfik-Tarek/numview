@@ -1,0 +1,6 @@
+@use '../../styles/variables' as *;
+
+.modal {
+  height: 100dvh;
+  background-color: $page-background;
+}
