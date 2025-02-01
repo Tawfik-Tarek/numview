@@ -10,5 +10,10 @@ body {
 
 .container {
   padding: 0.75rem;
-  margin-top: 0.625rem;
+  margin: 0.625rem 0.625rem 0;
+}
+
+[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
 }

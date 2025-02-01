@@ -1,59 +1,112 @@
 @use "../../styles/variables.scss" as *;
 
-.number-header {
-  .first {
-    height: 2.625rem;
+.first {
+  height: 2.625rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  border-bottom: solid 1px #e4e4e4;
+  border-radius: 0.5rem 0.5rem 0 0;
+  background-color: $div-background;
+  align-items: center;
+  padding: {
+    top: 0.563rem;
+    bottom: 0.563rem;
+  }
+  & > div:first-child {
+    display: flex;
+    align-items: center;
+  }
+  .hashtag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.375rem;
+    height: 1.375rem;
+    padding: 0.313rem;
+    color: #3e97ff;
+    background-color: #3e97ff1a;
+    margin-left: 0.5rem;
+    border-radius: 0.25rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+
+  .hashtag + span {
+    font-weight: 500;
+  }
+
+  .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.25rem;
+    height: 1.25rem;
+    color: #1c1c28;
+    background-color: #f4f4f4;
+    font-weight: 500;
+    padding: 0.412rem;
+    border-radius: 0.342rem;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: #ff4b55;
+      cursor: pointer;
+    }
+  }
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: $div-background;
+  .num-div {
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
-    border-bottom: solid 1px #e4e4e4;
-    border-radius: 0.5rem 0.5rem 0 0;
-    background-color: $div-background;
-    align-items: center;
-    padding: {
-      top: 0.563rem;
-      bottom: 0.563rem;
-    }
     & > div:first-child {
       display: flex;
       align-items: center;
+      gap: 0.75rem;
     }
-    .hashtag {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 1.375rem;
-      height: 1.375rem;
-      padding: 0.313rem;
-      color: #3e97ff;
-      background-color: #3e97ff1a;
-      margin-left: 0.5rem;
+    span.number {
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: $nums-color;
+    }
+    span.number + span {
+      padding: 7px 16px;
+      color: rgba(255, 255, 255, 1);
+      background-color: rgba(72, 178, 154, 1);
       border-radius: 0.25rem;
-      font-style: italic;
       font-weight: 500;
     }
 
-    .hashtag + span {
-      font-weight: 500;
-    }
+    button {
+      border: none;
+      background-color: transparent;
+      width: 2.125rem;
+      height: 2rem;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      color: rgba(107, 114, 128, 1);
+      svg {
+        width: 1.25rem;
+        height: 1.25rem;
+        fill: rgba(107, 114, 128, 1);
+        transition: all 0.3s ease;
+      }
 
-    .close {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 1.25rem;
-      height: 1.25rem;
-      color: #1c1c28;
-      background-color: #f4f4f4;
-      font-weight: 500;
-      padding: 0.412rem;
-      border-radius: 0.342rem;
-      transition: all 0.3s ease;
-
-      &:hover {
-        color: #ff4b55;
-        cursor: pointer;
+      &:hover svg{
+        fill: rgba(62, 151, 255, 1);
       }
     }
+  }
+
+  .num-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
   }
 }
