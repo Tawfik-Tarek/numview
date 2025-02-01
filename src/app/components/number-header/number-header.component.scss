@@ -1,4 +1,4 @@
-@use '../../styles/variables.scss' as *;
+@use "../../styles/variables.scss" as *;
 
 .number-header {
   .first {
@@ -6,36 +6,52 @@
     display: flex;
     justify-content: space-between;
     margin-top: 0;
-    border-bottom: solid 1px #E4E4E4;
+    border-bottom: solid 1px #e4e4e4;
     border-radius: 0.5rem 0.5rem 0 0;
     background-color: $div-background;
     align-items: center;
-    .hashtag{
+    padding: {
+      top: 0.563rem;
+      bottom: 0.563rem;
+    }
+    div {
+      display: flex;
+      align-items: center;
+    }
+    .hashtag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 1.375rem;
       height: 1.375rem;
       padding: 0.313rem;
-      color: #3E97FF;
-      background-color: #3E97FF1A;
+      color: #3e97ff;
+      background-color: #3e97ff1a;
       margin-left: 0.5rem;
-      border-radius: 0.25;
+      border-radius: 0.25rem;
+      font-style: italic;
+      font-weight: 500;
     }
 
-    .hashtag + span  {
+    .hashtag + span {
       font-weight: 500;
     }
 
     .close {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 1.25rem;
       height: 1.25rem;
-      color: #1C1C28;
-      background-color: #F4F4F4;
+      color: #1c1c28;
+      background-color: #f4f4f4;
       font-weight: 500;
       padding: 0.412rem;
       border-radius: 0.342rem;
       transition: all 0.3s ease;
 
       &:hover {
-        color: #FF4B55;
+        color: #ff4b55;
         cursor: pointer;
       }
     }
