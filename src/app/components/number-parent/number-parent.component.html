@@ -1,6 +1,6 @@
 <div class="modal" *ngIf="data; else loading">
   <app-number-header [headerData]="data.modal.numberHeader"/>
-  <app-table />
+  <app-table [tableData]="data.modal.table"/>
   <app-footer />
 </div>
 

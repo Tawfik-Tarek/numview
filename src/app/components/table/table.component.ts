@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input, SimpleChanges } from '@angular/core';
+import { TableData } from '../../models/number-data.model';
 
 @Component({
   selector: 'app-table',
@@ -8,63 +9,14 @@ import { Component } from '@angular/core';
   styleUrl: './table.component.scss',
 })
 export class TableComponent {
-  data = [
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '-',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '01/12/2024',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '01/12/2024',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '01/12/2024',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '01/12/2024',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-    {
-      client: 'الشركة الألمانية للإبادة...',
-      dateAssigned: '01/12/2024',
-      dateCanceled: '01/12/2024',
-      manager: 'عبدالرحيم إسماعيل ناصف',
-      localMinutes: 7654,
-      internationalMinutes: 122,
-      amount: '61890 ج.م',
-    },
-  ];
+  @Input() tableData!: TableData;
+  data: any[] = [];
 
+  ngOnChanges(changes: SimpleChanges) {
+    if (changes['tableData'] && this.tableData) {
+      this.data = this.tableData.data;
+    }
+  }
   itemsPerPage = 5;
   currentPage = 1;
 
@@ -83,7 +35,22 @@ export class TableComponent {
   }
 
   get pageNumbers() {
-    return Array.from({ length: this.totalPages() }, (_, i) => i + 1);
+    const total = this.totalPages();
+    const maxPagesToShow = 5;
+    let startPage = Math.max(
+      1,
+      this.currentPage - Math.floor(maxPagesToShow / 2)
+    );
+    let endPage = Math.min(total, startPage + maxPagesToShow - 1);
+
+    if (endPage - startPage < maxPagesToShow - 1) {
+      startPage = Math.max(1, endPage - maxPagesToShow + 1);
+    }
+
+    return Array.from(
+      { length: endPage - startPage + 1 },
+      (_, i) => startPage + i
+    );
   }
 
   changePage(page: number) {
