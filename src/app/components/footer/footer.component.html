@@ -1,17 +1,17 @@
 <div class="container footer">
   <div class="author-details">
-    <img src="/assets/author.png" alt="author image" />
+    <img [src]="footerData.author.image" alt="author image" />
     <div>
       <span>تم الإنشاء بواسطة</span>
-      <span class="author-name">عبدالرحيم إسماعيل ناصف</span>
+      <span class="author-name">{{ footerData.author.name }}</span>
     </div>
   </div>
   <div class="date">
     <span>تاريخ الإنشاء</span>
     <div>
-      <span>01/12/2024</span>
+      <span>{{ footerData.creationDate }}</span>
       <span class="period"></span>
-      <span>04:30 م</span>
+      <span>{{ footerData.creationTime }}</span>
     </div>
   </div>
 </div>
