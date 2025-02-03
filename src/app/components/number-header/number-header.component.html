@@ -14,14 +14,28 @@
         <span class="number">{{ headerData.numberDetails.number }}</span>
         <span>{{ headerData.numberDetails.status }}</span>
       </div>
-      <button>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-          <path
-            d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"
-          />
-        </svg>
-      </button>
+      <div class="dropdown-container">
+        <button class="btn" (click)="toggleDropdown($event)">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <path
+              d="M8 256a56 56 0 1 1 112 0A56 56 0 1 1 8 256zm160 0a56 56 0 1 1 112 0 56 56 0 1 1 -112 0zm216-56a56 56 0 1 1 0 112 56 56 0 1 1 0-112z"
+            />
+          </svg>
+        </button>
+        <!-- Dropdown Menu -->
+        <div *ngIf="isDropdownVisible" class="dropdown-menu">
+          <button (click)="selectOption('edit')">
+            <img src="assets/pen.png" alt="pen icon" />
+            <span>تعديل الرقم</span>
+          </button>
+          <button (click)="selectOption('cancel')">
+            <img src="assets/cancel.png" alt="cancel icon" />
+            <span> إلغاء التعيين </span>
+          </button>
+        </div>
+      </div>
     </div>
+
     <div class="num-info">
       <div class="row">
         <div>
