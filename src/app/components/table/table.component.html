@@ -55,6 +55,7 @@
         <li
           *ngFor="let page of pageNumbers"
           [class.active]="currentPage == page"
+          (click) = "changePage(page)"
         >
           {{ page }}
         </li>

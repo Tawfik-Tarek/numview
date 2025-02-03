@@ -99,6 +99,13 @@ tfoot {
         display: flex;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
+        transition: all 0.1s ease-in;
+
+        &:hover {
+          background-color: #3E97FF;
+          color: white;
+        }
 
         &.active {
           background-color: #3E97FF;
