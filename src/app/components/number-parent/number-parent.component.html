@@ -1,5 +1,9 @@
-<div class="modal">
-  <app-number-header />
+<div class="modal" *ngIf="data; else loading">
+  <app-number-header [headerData]="data.modal.numberHeader"/>
   <app-table />
   <app-footer />
 </div>
+
+<ng-template #loading>
+  <p>جار التحميل...</p>
+</ng-template>

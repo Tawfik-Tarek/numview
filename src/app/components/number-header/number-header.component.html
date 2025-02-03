@@ -11,8 +11,8 @@
   <section class="container second">
     <div class="num-div">
       <div>
-        <span class="number">012345678910</span>
-        <span>قيد الاستخدام</span>
+        <span class="number">{{ headerData.numberDetails.number }}</span>
+        <span>{{ headerData.numberDetails.status }}</span>
       </div>
       <button>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -24,32 +24,48 @@
     </div>
     <div class="num-info">
       <div class="row">
-        <div><span>اسم البروتوكول</span><span>فودافون مصر</span></div>
+        <div>
+          <span>اسم البروتوكول</span><span>{{ headerData.protocol }}</span>
+        </div>
         <span class="line"></span>
         <div>
           <span>الدولة</span>
           <div class="country-container">
-            <img src="/assets/country.png" alt="country flag" />
-            <span>المملكة الأردنية الهاشمية</span>
+            <img [src]="headerData.country.flag" alt="country flag" />
+            <span>{{ headerData.country.name }}</span>
           </div>
         </div>
         <span class="line"></span>
-        <div>
-          <span>العميل الحالي</span><span>الشركة الالمانية لابادة الحشرات</span>
+        <div class="tooltip-container">
+          <span>العميل الحالي</span
+          ><span class="truncate">{{ headerData.currentClient }}</span>
+          <span class="tooltip-text">{{ headerData.currentClient }}</span>
         </div>
         <span class="line"></span>
-        <div><span>عدد الامدادات</span><span>09</span></div>
+        <div>
+          <span>عدد الامدادات</span><span>{{ headerData.supplies }}</span>
+        </div>
       </div>
       <div class="row">
-        <div><span>تاريخ اخر شحنة</span><span>2024/12/29</span></div>
-        <span class="line"></span>
-        <div><span>الرصيد الحالي</span><span> 5000 ج.م</span></div>
-        <span class="line"></span>
         <div>
-          <span>الرصيد المستخدم للعميل الحالي</span><span>5000 ج.م</span>
+          <span>تاريخ اخر شحنة</span
+          ><span>{{ headerData.lastShipmentDate }}</span>
         </div>
         <span class="line"></span>
-        <div><span>الرصيد المستخدم للرقم ككل</span><span>5000 ج.م</span></div>
+        <div>
+          <span>الرصيد الحالي</span
+          ><span> {{ headerData.currentBalance }}</span>
+        </div>
+        <span class="line"></span>
+        <div>
+          <span>الرصيد المستخدم للعميل الحالي</span
+          ><span>{{ headerData.currentClientBalance }}</span>
+        </div>
+        <span class="line"></span>
+        <div>
+          <span>الرصيد المستخدم للرقم ككل</span
+          ><span>{{ headerData.totalUsedBalance }}</span>
+        </div>
       </div>
     </div>
   </section>

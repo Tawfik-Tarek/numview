@@ -1,0 +1,492 @@
+{
+  "modal": {
+    "numberHeader": {
+      "numberDetails": {
+        "number": "012345678910",
+        "status": "قيد الاستخدام"
+      },
+      "protocol": "فودافون مصر",
+      "country": {
+        "name": "المملكة العربية السعودية",
+        "flag": "/assets/country.png"
+      },
+      "currentClient": "الشركة الألمانية للإبادة الحشرات",
+      "supplies": "09",
+      "lastShipmentDate": "2024/12/29",
+      "currentBalance": "5000 ج.م",
+      "currentClientBalance": "5000 ج.م",
+      "totalUsedBalance": "5000 ج.م"
+    },
+    "table": {
+      "data": [
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "-",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        },
+        {
+          "client": "الشركة الألمانية للإبادة الحشرات",
+          "dateAssigned": "01/12/2024",
+          "dateCanceled": "01/12/2024",
+          "manager": "عبدالرحيم إسماعيل ناصف",
+          "localMinutes": 7654,
+          "internationalMinutes": 122,
+          "amount": "61890 ج.م"
+        }
+      ]
+    },
+    "footer": {
+      "author": {
+        "name": "عبدالرحيم إسماعيل ناصف",
+        "image": "/assets/author.png"
+      },
+      "creationDate": "01/12/2024",
+      "creationTime": "04:30 م"
+    }
+  }
+}
