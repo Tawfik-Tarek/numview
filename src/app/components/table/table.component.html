@@ -1,1 +1,71 @@
-<diV class="container table">table</diV>
+<section class="container table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>العميل</th>
+        <th>تاريخ التعيين</th>
+        <th>تاريخ إلغاء التعيين</th>
+        <th>المسؤول عن التعيين</th>
+        <th>الدقائق المحلية</th>
+        <th>الدقائق الدولية</th>
+        <th>المبلغ</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of paginatedData">
+        <td>
+          <div class="client-info">
+            <img src="/assets/company.jpg" alt="company logo" />
+            <span>{{ item.client }}</span>
+          </div>
+        </td>
+        <td>{{ item.dateAssigned }}</td>
+        <td>{{ item.dateCanceled }}</td>
+        <td>{{ item.manager }}</td>
+        <td>{{ item.localMinutes }}</td>
+        <td>{{ item.internationalMinutes }}</td>
+        <td>{{ item.amount }}</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <tfoot>
+    <div class="show">
+      عرض
+      <select (change)="changeItemsPerPage($event)">
+        <option
+          *ngFor="let num of [5, 10, 15]"
+          [value]="num"
+          [selected]="itemsPerPage === num"
+        >
+          {{ num }}
+        </option>
+      </select>
+      من أصل <span>{{ data.length }}</span>
+    </div>
+
+    <div class="pagination">
+      <button
+        (click)="changePage(currentPage - 1)"
+        [disabled]="currentPage === 1"
+      >
+        <
+      </button>
+      <ul>
+        <li
+          *ngFor="let page of pageNumbers"
+          [class.active]="currentPage == page"
+        >
+          {{ page }}
+        </li>
+      </ul>
+
+      <button
+        (click)="changePage(currentPage + 1)"
+        [disabled]="currentPage === totalPages()"
+      >
+        >
+      </button>
+    </div>
+  </tfoot>
+</section>

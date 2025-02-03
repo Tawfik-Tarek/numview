@@ -1,0 +1,125 @@
+@use "../../styles/variables.scss" as *;
+
+.table-container {
+  background-color: $div-background;
+  border: solid 1px #ecf0f5;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-spacing: 0 0.5rem;
+  min-width: 53rem;
+}
+
+table thead tr {
+  font-size: 13px;
+  color: $text-color;
+  font-weight: 400;
+  height: 40px;
+  border-radius: 6px;
+  background-color: #f4f5f7;
+  border-bottom: solid 1px #f4f5f7;
+  & > th:first-child {
+    padding-right: 12px;
+  }
+}
+
+table tbody {
+  display: table-row-group;
+}
+
+table tbody tr {
+  border: solid 0.75px #0000001a;
+  border-radius: 6px;
+  height: 50px;
+  & > td:first-child {
+    padding-right: 12px;
+  }
+}
+
+.client-info {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  img {
+    width: 26px;
+    height: 26px;
+    border-radius: 40px;
+    border: 0.33px solid #0000001a;
+  }
+}
+
+tfoot {
+  display: flex;
+
+  justify-content: space-between;
+  .show {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    font-size: 11px;
+    font-weight: 500;
+    span {
+      font-size: 10px;
+    }
+
+    select {
+      padding: 7px 8px;
+      border: 1px solid #efefef;
+      border-radius: 2px;
+      height: 30px;
+      outline: none;
+      opacity: {
+        font-size: 10px;
+      }
+    }
+  }
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    direction: ltr;
+
+    ul {
+      display: flex;
+      gap: 4px;
+      list-style: none;
+
+      li {
+        width: 27px;
+        height: 27px;
+        padding: 8px;
+        border-radius: 4px;
+        font-size: 14px;
+        color: #7E8299;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &.active {
+          background-color: #3E97FF;
+          color: white;
+        }
+      }
+    }
+
+    button {
+      width: 7.5px;
+      height: 12px;
+      color: $text-color;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      color: #6b7280;
+    }
+  }
+}
