@@ -16,7 +16,10 @@
         <td>
           <div class="client-info">
             <img src="/assets/company.jpg" alt="company logo" />
-            <span>{{ item.client }}</span>
+            <div class="tooltip-container">
+              <span class="truncate">{{ item.client }}</span>
+              <span class="tooltip-text">{{ item.client }}</span>
+            </div>
           </div>
         </td>
         <td>{{ item.dateAssigned }}</td>
@@ -55,7 +58,7 @@
         <li
           *ngFor="let page of pageNumbers"
           [class.active]="currentPage == page"
-          (click) = "changePage(page)"
+          (click)="changePage(page)"
         >
           {{ page }}
         </li>
