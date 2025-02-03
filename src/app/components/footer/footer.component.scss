@@ -1,0 +1,60 @@
+@use "../../styles/variables.scss" as *;
+
+.footer {
+  background-color: $div-background;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #ecf0f5;
+  border-radius: 6px;
+
+  .author-details {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    img {
+      width: 26px;
+      height: 26px;
+      border: 0.4px solid #0000001a;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      border-radius: 32px;
+    }
+
+    img + div {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 12px;
+      color: $text-color;
+
+      .author-name {
+        color: #1c1c28;
+        font-size: 13px;
+      }
+    }
+  }
+
+  .date {
+    font-size: 12px;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    div {
+      font-size: 13px;
+      color: #1c1c28;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+
+      .period {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background-color: #E8E8E8;
+        border-radius: 50%;
+      }
+    }
+  }
+}

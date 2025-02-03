@@ -28,6 +28,7 @@ table thead tr {
 
 table tbody {
   display: table-row-group;
+  font-size: 14px;
 }
 
 table tbody tr {
@@ -126,7 +127,7 @@ tfoot {
     button:disabled {
       opacity: 0.4;
       cursor: not-allowed;
-      color: #6b7280;
+      color: $text-color;
     }
   }
 }
