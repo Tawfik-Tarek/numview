@@ -5,24 +5,26 @@
   display: flex;
   justify-content: space-between;
   margin: 0;
-  border-bottom: solid 1px #e4e4e4;
-  border-radius: 0.5rem 0.5rem 0 0;
+  border-bottom: solid 1px $border-color;
+  border-radius: $border-radius $border-radius 0 0;
   background-color: $div-background;
   align-items: center;
   padding: {
     top: 0.563rem;
     bottom: 0.563rem;
   }
+
   & > div:first-child {
     display: flex;
     align-items: center;
   }
+
   .hashtag {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.375rem;
-    height: 1.375rem;
+    width: $hashtag-size;
+    height: $hashtag-size;
     padding: 0.313rem;
     color: #3e97ff;
     background-color: #3e97ff1a;
@@ -40,8 +42,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 1.25rem;
-    height: 1.25rem;
+    width: $close-btn-size;
+    height: $close-btn-size;
     color: #1c1c28;
     background-color: #f4f4f4;
     font-weight: 500;
@@ -61,19 +63,23 @@
   flex-direction: column;
   gap: 1.5rem;
   background-color: $div-background;
+
   .num-div {
     display: flex;
     justify-content: space-between;
+
     & > div:first-child {
       display: flex;
       align-items: center;
       gap: 0.75rem;
     }
+
     span.number {
       font-weight: 600;
       font-size: 1.25rem;
       color: $nums-color;
     }
+
     span.number + span {
       padding: 7px 16px;
       color: #ffffff;
@@ -89,6 +95,7 @@
       height: 2rem;
       cursor: pointer;
       border-radius: 0.25rem;
+
       svg {
         width: 1.25rem;
         height: 1.25rem;
@@ -111,6 +118,7 @@
     & > div.row {
       display: flex;
       justify-content: space-between;
+
       & > div {
         display: flex;
         flex-direction: column;
@@ -132,6 +140,7 @@
   display: flex;
   gap: 0.375rem;
   align-items: center;
+
   img {
     width: 1.313rem;
     height: 1.343rem;
@@ -141,7 +150,11 @@
 
 span.line {
   display: inline-block;
-  height: 28px;
-  border: solid 1px rgba(223, 223, 223, 1);
+  height: $line-height;
+  border: solid 1px $border-color;
   margin: auto;
+
+  @media (max-width: 759px) {
+    display: none;
+  }
 }
