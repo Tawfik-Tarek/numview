@@ -1,3 +1,5 @@
+@use "./app/styles/variables" as *;
+
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +26,7 @@ body {
 }
 
 .truncate {
-  max-width: 136px; 
+  max-width: 136px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -32,7 +34,6 @@ body {
   vertical-align: middle;
   position: relative;
 }
-
 
 .tooltip-text {
   visibility: hidden;
@@ -54,4 +55,21 @@ body {
 .tooltip-container:hover .tooltip-text {
   visibility: visible;
   opacity: 1;
+}
+
+@media (max-width: $medium) {
+  .container {
+    padding: 0.5rem;
+    margin: 0.5rem 0.5rem 0;
+  }
+}
+
+@media (max-width: $small) {
+  .container {
+    padding: 0.25rem;
+    margin: 0.25rem 0.25rem 0;
+  }
+  html {
+    font-size: 90%;
+  }
 }

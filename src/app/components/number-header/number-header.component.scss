@@ -79,6 +79,13 @@
       font-weight: 600;
       font-size: 1.25rem;
       color: $nums-color;
+      @media (max-width: $medium) {
+        font-size: 1rem;
+      }
+
+      @media (max-width: $small) {
+        font-size: 0.875rem;
+      }
     }
 
     span.number + span {
@@ -87,6 +94,15 @@
       background-color: #48b29a;
       border-radius: 0.25rem;
       font-weight: 500;
+      @media (max-width: $medium) {
+        padding: 5px 10px;
+        font-size: 12px;
+      }
+
+      @media (max-width: $small) {
+        padding: 4px 8px;
+        font-size: 10px;
+      }
     }
 
     button {
@@ -116,9 +132,19 @@
     gap: 1rem;
     justify-content: center;
 
+    @media (max-width: $medium) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
     & > div.row {
       display: flex;
       justify-content: space-between;
+
+      @media (max-width: $medium) {
+        flex-direction: column;
+        gap: 1rem;
+      }
 
       & > div {
         display: flex;
@@ -155,7 +181,7 @@ span.line {
   border: solid 1px $border-color;
   margin: auto;
 
-  @media (max-width: 759px) {
+  @media (max-width: $medium) {
     display: none;
   }
 }

@@ -1,8 +1,11 @@
 @use "../../styles/variables.scss" as *;
 
-.table-container {
+section.table {
   background-color: $div-background;
   border: solid 1px #ecf0f5;
+}
+
+.table-container {
   max-width: 100%;
   overflow-x: auto;
 }
@@ -52,8 +55,9 @@ table tbody tr {
   }
 }
 
-tfoot {
+div.controls {
   display: flex;
+  background-color: $div-background;
 
   justify-content: space-between;
   .show {
@@ -66,14 +70,23 @@ tfoot {
       font-size: 10px;
     }
 
+    @media (max-width: $small) {
+      gap: 4px;
+      font-size: 8px;
+    }
+
     select {
       padding: 7px 8px;
       border: 1px solid #efefef;
       border-radius: 2px;
       height: 30px;
       outline: none;
-      opacity: {
+      option: {
         font-size: 10px;
+      }
+      @media (max-width: $small) {
+        padding: 4px 6px;
+        font-size: 8px;
       }
     }
   }
@@ -84,6 +97,10 @@ tfoot {
     align-items: center;
     gap: 12px;
     direction: ltr;
+
+    @media (max-width: $small) {
+      gap: 8px;
+    }
 
     ul {
       display: flex;
@@ -96,20 +113,27 @@ tfoot {
         padding: 8px;
         border-radius: 4px;
         font-size: 14px;
-        color: #7E8299;
+        color: #7e8299;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition: all 0.1s ease-in;
 
+        @media (max-width: $small) {
+          width: 16px;
+          height: 16px;
+          padding: 4px;
+          font-size: 10px;
+        }
+
         &:hover {
-          background-color: #3E97FF;
+          background-color: #3e97ff;
           color: white;
         }
 
         &.active {
-          background-color: #3E97FF;
+          background-color: #3e97ff;
           color: white;
         }
       }

@@ -1,38 +1,40 @@
-<section class="container table-container">
-  <table>
-    <thead>
-      <tr>
-        <th>العميل</th>
-        <th>تاريخ التعيين</th>
-        <th>تاريخ إلغاء التعيين</th>
-        <th>المسؤول عن التعيين</th>
-        <th>الدقائق المحلية</th>
-        <th>الدقائق الدولية</th>
-        <th>المبلغ</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let item of paginatedData">
-        <td>
-          <div class="client-info">
-            <img src="/assets/company.jpg" alt="company logo" />
-            <div class="tooltip-container">
-              <span class="truncate">{{ item.client }}</span>
-              <span class="tooltip-text">{{ item.client }}</span>
+<section class="container table">
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th>العميل</th>
+          <th>تاريخ التعيين</th>
+          <th>تاريخ إلغاء التعيين</th>
+          <th>المسؤول عن التعيين</th>
+          <th>الدقائق المحلية</th>
+          <th>الدقائق الدولية</th>
+          <th>المبلغ</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of paginatedData">
+          <td>
+            <div class="client-info">
+              <img src="/assets/company.jpg" alt="company logo" />
+              <div class="tooltip-container">
+                <span class="truncate">{{ item.client }}</span>
+                <span class="tooltip-text">{{ item.client }}</span>
+              </div>
             </div>
-          </div>
-        </td>
-        <td>{{ item.dateAssigned }}</td>
-        <td>{{ item.dateCanceled }}</td>
-        <td>{{ item.manager }}</td>
-        <td>{{ item.localMinutes }}</td>
-        <td>{{ item.internationalMinutes }}</td>
-        <td>{{ item.amount }}</td>
-      </tr>
-    </tbody>
-  </table>
+          </td>
+          <td>{{ item.dateAssigned }}</td>
+          <td>{{ item.dateCanceled }}</td>
+          <td>{{ item.manager }}</td>
+          <td>{{ item.localMinutes }}</td>
+          <td>{{ item.internationalMinutes }}</td>
+          <td>{{ item.amount }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-  <tfoot>
+  <div class="controls">
     <div class="show">
       عرض
       <select (change)="changeItemsPerPage($event)">
@@ -71,5 +73,5 @@
         >
       </button>
     </div>
-  </tfoot>
+  </div>
 </section>
